@@ -1,5 +1,7 @@
 require 'open-uri'
 require 'xmlsimple'
+require 'yaml'
+require 'serialport'
 
 def add_arriving_trains(train_hash, line_name)
 	if train_hash
@@ -11,7 +13,30 @@ def add_arriving_trains(train_hash, line_name)
 	end
 end
 
+def add_arriving_trains_to_light_array(line_name)
+	@arriving_trains[line_name].each do |arriving_train|
+		subbed_arriving_train = arriving_train.gsub!(/[^0-9A-Za-z]/, '_')
+		if !subbed_arriving_train.nil?
+			arriving_train = subbed_arriving_train
+		end
+		light_number = @station_lights[line_name][arriving_train]
+		if !light_number.nil?
+			@lights_serial_array[light_number-1] = 1
+		end
+	end
+end
+
+def create_serial_string
+	@light_serial_string = ''
+	@lights_serial_array.each do |light_on|
+		@light_serial_string = @light_serial_string + light_on.to_s + ','
+	end
+
+	@light_serial_string = @light_serial_string + 'x'
+end
+
 api_key = ARGV[0]
+@lights_serial_array = Array.new(25, 0)
 
 trains = open("http://lapi.transitchicago.com/api/1.0/ttpositions.aspx?key=#{api_key}&rt=red&rt=blue&rt=brn&rt=G&rt=Org&rt=P&rt=Pink&rt=Y")
 response_status = trains.status
@@ -57,5 +82,13 @@ if response_status.include? '200'
 	
 
 	puts @arriving_trains
+	
+	@station_lights = YAML.load_file('lights.yml')
+
+	add_arriving_trains_to_light_array('red_line')
+
+	create_serial_string
+	
+	puts @light_serial_string
 
 end
