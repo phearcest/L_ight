@@ -1,10 +1,10 @@
 red_line:
-  47th:
-  63rd:
-  69th:
-  79th:
-  87th:
-  95th_Dan_Ryan:
+  47th: 27
+  63rd: 28
+  69th: 29
+  79th: 30
+  87th: 31
+  95th/Dan_Ryan: 32
   Addison: 13
   Argyle: 9
   Belmont: 14
@@ -29,7 +29,7 @@ red_line:
   North_Clyborn: 16
   Roosevelt: 24
   Sheridan: 12
-  Sox_35th:
+  Sox_35th: 26
   Thorndale: 6
   Wilson: 11
 blue_line:
@@ -94,7 +94,101 @@ brown_line:
   Wellington:
   Western:
 green_line:
+  35th-Bronzeville-IIT:
+  43rd:
+  47th:
+  51st:
+  Adams/Wabash:
+  Ashland:
+  Ashland/63rd:
+  Austin:
+  California:
+  Central:
+  Cermak-McCormick_Place:
+  Conservatory:
+  Cicero:
+  Clark/Lake:
+  Clinton:
+  Cottage_Grove:
+  Garfield:
+  Halsted:
+  Harlem/Lake:
+  Indiana:
+  Kedzie:
+  King_Drive:
+  Laramie:
+  Madison/Wabash:
+  Morgan:
+  Oak_Park:
+  Pulaski:
+  Roosevelt:
+  State/Lake:
 orange_line:
+  35th/Archer:
+  Adams/Wabash:
+  Ashland:
+  Clark/Lake:
+  Harold_Washing_Library-State/Van_Buren:
+  Kedzie:
+  LaSalle/Van_Buren:
+  Midway:
+  Pulaski:
+  Quincy/Wells:
+  Roosevelt:
+  Washington/Wells:
+  Western:
 purple_line:
+  Adams/Washington:
+  Armitage:
+  Belmont:
+  Central:
+  Chicago:
+  Clark/Lake:
+  Davis:
+  Dempster:
+  Diversey:
+  Foster:
+  Fullerton:
+  Harold_Washing_Library-State:
+  Howard:
+  LaSalle/Van_Buren:
+  Linden:
+  Madison/Wabash:
+  Main:
+  Merchandise_Mart:
+  Noyes:
+  Quincy/Wells:
+  Randolph/Wabash:
+  Sedgwick:
+  South_Boulevard:
+  State/Lake:
+  Washington/Wells:
+  Wellington:
 pink_line:
+  18th:
+  54th/Cermak:
+  Adams/Wabash:
+  Ashland:
+  California:
+  Central_Park:
+  Cicero:
+  Clark/Lake:
+  Clinton:
+  Damen:
+  Harold_Washing_Library-State:
+  Kedzie:
+  Kostner:
+  LaSalle/Van_Buren:
+  Madison/Wabash:
+  Morgan:
+  Polk:
+  Pulaski:
+  Quincy/Wells:
+  Randolph/Wabash:
+  State/Lake:
+  Washington/Wells:
+  Western:
 yellow_line:
+  Dempster-Skokie:
+  Howard:
+  Oakton-Skokie:

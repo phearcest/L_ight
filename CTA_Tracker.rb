@@ -78,6 +78,8 @@ end
 
 while true do
 
+  'http://lapi.transitchicago.com/api/1.0/ttpositions.aspx?key=5e03e4db57c74d0da46c152d0349fecb&rt=red&rt=blue&rt=brn&rt=G&rt=Org&rt=P&rt=Pink&rt=Y'
+
 	trains = open("http://lapi.transitchicago.com/api/1.0/ttpositions.aspx?key=#{api_key}&rt=red&rt=blue&rt=brn&rt=G&rt=Org&rt=P&rt=Pink&rt=Y")
 	response_status = trains.status
 	response_body = trains.read
